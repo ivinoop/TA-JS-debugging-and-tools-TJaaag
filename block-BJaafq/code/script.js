@@ -1,7 +1,5 @@
-// First
-
-function addNum(numA, numB) {
-    return numA + numB;
+function multiplyNum(numA, numB) {
+    return numA * numB;
 }
 
 let result, expected;
@@ -31,10 +29,10 @@ function expect(actual) {
     }
 }
 
-function testAddNum() {
-    result = addNum(3,4);
+function testMultiplyNum() {
+    result = multiplyNum(3,4);
     expected = 6;
     expect(result).toEqual(expected);
 }
 
-test("adding 3 and 4", testAddNum);
+test("Multipying 3 and 4", testMultiplyNum);
